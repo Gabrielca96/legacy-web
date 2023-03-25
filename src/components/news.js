@@ -21,7 +21,7 @@ export const News = () => {
   }, []);
 
   return (
-    <Container className="mt-4 mb-5">
+    <Container className="mt-5 mb-5">
       <h2>Noticias de construcción</h2>
       <Row>
         {news.slice(0,6).map((article, index) => (

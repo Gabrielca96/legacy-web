@@ -15,8 +15,9 @@ export const ContactForm = () => {
   return (
     <Form
       onSubmit={handleSubmit}
-      className="mt-1 mb-5"
-      style={{ padding: "30px" }}
+      className="mt-5 mb-5"
+      style={{ padding: "30px" }
+    }
     >
       <h2 className="mb-4">Formulario de contacto</h2>
       <Form.Group controlId="formName">

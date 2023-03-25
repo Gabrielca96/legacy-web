@@ -3,7 +3,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-export const KitchenSinkExample = () => {
+export const KitchenSink = () => {
   const cardImageStyle = {
     height: "12rem",
     objectFit: "cover",
@@ -31,7 +31,7 @@ export const KitchenSinkExample = () => {
           </ListGroup>
           <Card.Body>
             <Card.Link href="#">Proyectos</Card.Link>
-            <Card.Link href="#">Servicios</Card.Link>
+            <Card.Link href="/estructuras_services">Servicios</Card.Link>
           </Card.Body>
         </Card>
       </Col>
@@ -61,7 +61,7 @@ export const KitchenSinkExample = () => {
           </ListGroup>
           <Card.Body>
             <Card.Link href="#">Proyectos</Card.Link>
-            <Card.Link href="#">Servicios</Card.Link>
+            <Card.Link href="/sanitario_services">Servicios</Card.Link>
           </Card.Body>
         </Card>
       </Col>
@@ -85,7 +85,7 @@ export const KitchenSinkExample = () => {
           </ListGroup>
           <Card.Body>
             <Card.Link href="#">Proyectos</Card.Link>
-            <Card.Link href="#">Servicios</Card.Link>
+            <Card.Link href="/arquitectura_services">Servicios</Card.Link>
           </Card.Body>
         </Card>
       </Col>
@@ -109,7 +109,7 @@ export const KitchenSinkExample = () => {
           </ListGroup>
           <Card.Body>
             <Card.Link href="#">Proyectos</Card.Link>
-            <Card.Link href="#">Servicios</Card.Link>
+            <Card.Link href="/tecnica_services">Servicios</Card.Link>
           </Card.Body>
         </Card>
       </Col>

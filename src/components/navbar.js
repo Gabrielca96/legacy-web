@@ -11,7 +11,8 @@ import { useTranslation } from 'react-i18next';
 import enTranslations from '../locales/en.json';
 import esTranslations from '../locales/es.json';
 
-import logo from 'bootstrap-icons/icons/bootstrap.svg';
+//import logo from 'bootstrap-icons/icons/bootstrap.svg';
+import logo from './../L.png';
 
 import chileFlag from './../Logo-ch.jpg';
 import usaFlag from './../Logo-eeuu.jpg';
@@ -28,48 +29,48 @@ export const AppNavbar = () => {
   i18n.addResourceBundle('es', 'translation', esTranslations, true, false);
 
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand>
+        <Navbar.Brand href="/">
           <img
             src={logo}
-            width="30"
-            height="30"
+            width="100"
+            height="70"
             className="d-inline-block align-top"
             alt="Bootstrap logo"
-          />{' '}
-          Legacy Ingeniería
+          />{' '}          
         </Navbar.Brand>
+        <Navbar.Brand href="/">Legacy Ingeniería</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">{t("Inicio")}</Nav.Link>
             <Nav.Link href="/nosotros">{t("Nosotros")}</Nav.Link>
             <NavDropdown title={t("Servicios")} id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
+              <NavDropdown.Item href="/estructuras_services">
                 Cálculo Estructural
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item href="/sanitario_services">
                 Ingeniería Sanitaria
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
+              <NavDropdown.Item href="/tecnica_services">
                 Dibujo Técnico
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Arquitectura</NavDropdown.Item>
+              <NavDropdown.Item href="/arquitectura_services">Arquitectura</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title={t("Proyectos")} id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Conexiones</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Habitacional
+              <NavDropdown.Item href="estructuras_project">Cálculo estructural</NavDropdown.Item>
+              <NavDropdown.Item href="sanitaria_project">
+                Diseño Sanitario
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Industrial</NavDropdown.Item>
+              <NavDropdown.Item href="arquitectura_project">Arquitectura</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Urbanismo</NavDropdown.Item>
+              <NavDropdown.Item href="otros_project">Otros</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/news">{t("Noticias")}</Nav.Link>
+            <Nav.Link href="/news">{t("Publicaciones")}</Nav.Link>
             <Nav.Link href="/contacto">{t("Contacto")}</Nav.Link>
-            <Nav.Link href="/job">{t("Trabaja en Legacy!")}</Nav.Link>
+            <Nav.Link href="/job">{t("Trabaja con Nosotros!")}</Nav.Link>
           </Nav>
           <Nav>
             <NavDropdown title={<span><FontAwesomeIcon icon={faGlobe} /> {t("Idioma")}</span>}  id="basic-nav-dropdown">

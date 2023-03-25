@@ -1,6 +1,6 @@
 import { Container, Button, Row, Col } from "react-bootstrap";
 
-export const TituloConTexto = () => {
+export const Nosotros = () => {
   return (
     <Container
       className="bg-transparent py-3"
@@ -9,12 +9,14 @@ export const TituloConTexto = () => {
         backgroundColor: "rgba(255, 255, 255, 0.5)",
         marginTop: "20px",
         marginBottom: "200px",
+        textAlign: "justify",
+        textJustify: "inter-word"
       }}
     >
       <Row>
         <Col md={6}>
           <h2>¿Quienes somos?</h2>
-          <p>
+          <p className="mt-5 mb-5">
             Bienvenidos a nuestra empresa de ingeniería y arquitectura especializada
             en cálculo estructural. Nuestro equipo de expertos está comprometido en
             proporcionar servicios de alta calidad para asegurar que sus proyectos
@@ -35,15 +37,16 @@ export const TituloConTexto = () => {
             ingeniería y arquitectura. Estamos ansiosos por trabajar con usted en su
             próximo proyecto.
           </p>
-          <Button variant="primary" size="lg" className="mt-3">
-            Ver más
+          <Button variant="primary" size="lg" className="mt-3" href="/contacto">
+            Contacto
           </Button>
         </Col>
         <Col md={6}>
           <img
             src="https://cdn.forbes.com.mx/2017/02/destinos-naturaleza-copia.jpg"
             alt="Imagen de fondo"
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{ width: "100%", height: "100%", objectFit: "cover", maxWidth: "100%", border: "1px solid #ccc", borderRadius: "5px" }}
+            className= "mx-5"
           />
         </Col>
       </Row>

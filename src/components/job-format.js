@@ -22,7 +22,7 @@ export const Contact_Job_Form = () => {
   return (
     <Form
       onSubmit={handleSubmit}
-      className="mt-1 mb-5"
+      className="mt-5 mb-5"
       style={{ padding: "30px" }}
     >
       <h2 className="mb-4">Formulario de contacto</h2>
